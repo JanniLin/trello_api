@@ -12,7 +12,7 @@ describe("Login functionality", () => {
 
     await pages.login.loginModal.password.setValue("passworD123");
     await pages.login.loginModal.btnSubmit.click();
-    await browser.pause(5000);
+    await browser.pause(7000);
   });
   it("logo 'Trello' is displayed", async () => {
     const logo = await pages.boards.logo.isDisplayed();
